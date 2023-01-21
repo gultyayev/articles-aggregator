@@ -1,4 +1,6 @@
-export const authors = [
+import type { Author } from "./models/author.model";
+
+export const authors: Readonly<Author[]> = [
   {
     username: "sergeygultyayev",
     fullName: "Serhii Hultiaiev",
