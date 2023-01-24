@@ -2,7 +2,7 @@
   export let post;
 </script>
 
-<article>
+<article class="bg-white rounded-xl p-8">
   <h2 class="font-semibold">
     <a class="text-2xl text-blue-900" href={post.link} target="_blank">
       <span class="material-symbols-outlined align-text-bottom">open_in_new</span>
