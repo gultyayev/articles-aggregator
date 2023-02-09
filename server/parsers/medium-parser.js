@@ -11,7 +11,8 @@ export class MediumParser {
       const titleIdx = links.findIndex((link) => link.querySelector("h2"));
 
       // Sometimes there are two spans, first one containing a separator
-      const date = links[titleIdx - 1].querySelectorAll("span").at(-1).text;
+      // Recently published articles don't have span, so we query for p
+      const date = links[titleIdx - 1].querySelectorAll("span").at(-1)?.text ?? links[titleIdx - 1].querySelector("p").text;
       const title = links[titleIdx].querySelector("h2").text;
       // Sometimes title and descriptions share the a tag
       const description =
