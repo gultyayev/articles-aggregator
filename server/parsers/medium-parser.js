@@ -12,12 +12,17 @@ export class MediumParser {
 
       // Sometimes there are two spans, first one containing a separator
       // Recently published articles don't have span, so we query for p
-      const date = links[titleIdx - 1].querySelectorAll("span").at(-1)?.text ?? links[titleIdx - 1].querySelector("p").text;
+      let date = links[titleIdx - 1].querySelectorAll("span").at(-1)?.text ?? links[titleIdx - 1].querySelector("p").text;
       const title = links[titleIdx].querySelector("h2").text;
       // Sometimes title and descriptions share the a tag
       const description =
         links[titleIdx].querySelector("p")?.text ||
         links[titleIdx + 1].querySelector("p").text;
+
+      // Medium is not adding Year for this year's articles. So we add it manually
+      if (/[A-Za-z]{3}\s\d{1,2}$/.test(date)) {
+        date += `, ${new Date().getFullYear()}`
+      }
 
       const postLink = links[titleIdx].getAttribute("href").split("?")[0];
       // If there is only one "/" then the link should have the username
