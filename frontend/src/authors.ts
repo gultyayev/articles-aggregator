@@ -13,5 +13,6 @@ export const authors: Readonly<Author[]> = [
   },
   {username: "stremann", fullName: "Roman Stremedlovskyi", type: "medium"},
   {username: "gin_mitch", fullName: "Michael Mullins", type: "medium"},
-  {username: "ashiqsultan", fullName: "Ashiq Sultan", type: "dev.to"}
+  {username: "ashiqsultan", fullName: "Ashiq Sultan", type: "dev.to"},
+  {username: "krushenitskii", fullName: "Vladislav Krushenitskii", type: "medium"}
 ];
