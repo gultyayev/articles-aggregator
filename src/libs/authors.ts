@@ -16,5 +16,6 @@ export const authors: Readonly<Author[]> = [
 	{ username: 'ashiqsultan', fullName: 'Ashiq Sultan', type: 'dev.to' },
 	{ username: 'krushenitskii', fullName: 'Vladislav Krushenitskii', type: 'medium' },
 	{ username: 'montanaqw5809', fullName: 'Viktor Soroka', type: 'medium' },
-	{ username: 'oh_sociopath', fullName: 'Gevorg Martirosyan', type: 'medium' }
+	{ username: 'oh_sociopath', fullName: 'Gevorg Martirosyan', type: 'medium' },
+	{ username: 'iamalimammadli', fullName: 'Ali Mammadov', type: 'medium' }
 ];
