@@ -15,8 +15,8 @@
     });
 </script>
 
-<div class="flex mx-auto max-w-4xl gap-4 px-4">
-    <aside class="basis-2/6 border-r-4 border-blue-800">
+<div class="flex mx-auto max-w-4xl gap-8">
+    <aside class="basis-2/6 border-r-4 border-blue-800 py-8 hidden md:block">
         <h2 class="text-3xl text-gray-900 font-medium mb-4">Contributors</h2>
         <ul class="divide-y-2 divide-blue-800">
             {#each authors as author}
@@ -26,7 +26,7 @@
             {/each}
         </ul>
     </aside>
-    <main class="basis-4/6">
+    <main class="md:basis-4/6 p-8 md:px-0">
         {#await authorsRequest}
             Loading...
         {:then posts}
