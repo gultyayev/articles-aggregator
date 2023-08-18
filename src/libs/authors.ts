@@ -18,5 +18,6 @@ export const authors: Readonly<Author[]> = [
 	{ username: 'montanaqw5809', fullName: 'Viktor Soroka', type: 'medium' },
 	{ username: 'oh_sociopath', fullName: 'Gevorg Martirosyan', type: 'medium' },
 	{username: 'iamalimammadli', fullName: 'Ali Mammadov', type: 'medium'},
-	{username: 'irbansin', fullName: 'Anirban Sinha', type: 'medium'}
+	{username: 'irbansin', fullName: 'Anirban Sinha', type: 'medium'},
+	{username: 'deasamniashvili_82561', fullName: 'Medea Samniashvili', type: 'medium'},
 ];
