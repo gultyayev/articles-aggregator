@@ -1,4 +1,4 @@
-import type {Author} from './models/author.model';
+import type { Author } from './models/author.model';
 
 export const authors: Readonly<Author[]> = [
 	{
@@ -17,7 +17,9 @@ export const authors: Readonly<Author[]> = [
 	{ username: 'krushenitskii', fullName: 'Vladislav Krushenitskii', type: 'medium' },
 	{ username: 'montanaqw5809', fullName: 'Viktor Soroka', type: 'medium' },
 	{ username: 'oh_sociopath', fullName: 'Gevorg Martirosyan', type: 'medium' },
-	{username: 'iamalimammadli', fullName: 'Ali Mammadov', type: 'medium'},
-	{username: 'irbansin', fullName: 'Anirban Sinha', type: 'medium'},
-	{username: 'deasamniashvili_82561', fullName: 'Medea Samniashvili', type: 'medium'},
+	{ username: 'iamalimammadli', fullName: 'Ali Mammadov', type: 'medium' },
+	{ username: 'irbansin', fullName: 'Anirban Sinha', type: 'medium' },
+	{ username: 'deasamniashvili_82561', fullName: 'Medea Samniashvili', type: 'medium' },
+	{ username: 'eugene_b', fullName: 'Ievgen Bessergenev', type: 'dev.to' },
+	{ username: 'carboleda', fullName: 'Carlos Arboleda', type: 'medium' }
 ];
