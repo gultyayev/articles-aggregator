@@ -10,7 +10,7 @@ export const POST: RequestHandler = async ({request}) => {
     const validationResult = validate(body, PostsRequestSchema);
 
     if (!validationResult.valid) {
-        throw error(400, validationResult.toString())
+        error(400, validationResult.toString());
     }
 
     return json(await PostsService.getPosts(body));
