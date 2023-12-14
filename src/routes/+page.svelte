@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Contributor from '../libs/Contributor.svelte';
 	import Post from '../libs/Post.svelte';
-	import { authors } from '../libs/authors';
+	import {authors} from '../libs/authors';
 
 	const authorsRequest = axios.post('/api/posts', authors).then(({ data: authors }) => {
 		return authors
@@ -13,8 +13,8 @@
 					return post;
 				});
 			})
-			.slice(0, 6)
-			.sort((a, b) => new Date(b.date) - new Date(a.date));
+				.sort((a, b) => new Date(b.date) - new Date(a.date))
+				.slice(0, 6);
 	});
 </script>
 
